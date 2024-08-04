@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Mechanical System Design & Manufacturing",
+      "description": "Conceive, develop and optimize mechanical systems and components",
+      "location": "New York, NY",
+      "type": "Full-Time",
+      "category": "Electrical and Mechanical",
+      "applyLink": "https://example.com/apply/frontend-developer"
+  },
+  {
+    "title": "System Electronics & Communication",
+      "description": "Desige, develop, and maintain electronic systems and communication networks",
+      "location": "New York, NY",
+      "type": "Full-Time",
+      "category": "Electrical and Mechanical",
+      "applyLink": "https://example.com/apply/frontend-developer"
+  },
+  {
+    "title": "Software SLAM & Autonomy",
+      "description": "Develop cutting-edge algorithms and software systems for autonomous vehicles and robotics",
+      "location": "New York, NY",
+      "type": "Full-Time",
+      "category": "Electrical and Mechanical",
+      "applyLink": "https://example.com/apply/frontend-developer"
+  },
+    {
+      "title": "Frontend Developer",
+      "description": "Develop user interfaces for web applications.",
+      "location": "New York, NY",
+      "type": "Full-Time",
+      "category": "Development",
+      "applyLink": "https://example.com/apply/frontend-developer"
+    },
+    {
+      "title": "UI-UX Designer",
+      "description": "Design user-friendly interfaces for websites and mobile apps.",
+      "location": "San Francisco, CA",
+      "type": "Full-Time",
+      "category": "Design",
+      "applyLink": "https://example.com/apply/ui-ux-designer"
+    },
+    {
+      "title": "Logo-Designer",
+      "description": "Design distinctive and original visual marks or graphics that uniquely identify company.",
+      "location": "San Francisco, CA",
+      "type": "Full-Time",
+      "category": "Design",
+      "applyLink": "https://example.com/apply/ui-ux-designer"
+    },
+    {
+      "title": "Video Editor",
+      "description": "Transform raw footage into cohesive videos or films",
+      "location": "San Francisco, CA",
+      "type": "Full-Time",
+      "category": "Design",
+      "applyLink": "https://example.com/apply/ui-ux-designer"
+    },
+    {
+      "title": "Marketing Specialist",
+      "description": "Plan and execute marketing campaigns.",
+      "location": "Remote",
+      "type": "Part-Time",
+      "category": "Marketing",
+      "applyLink": "https://example.com/apply/marketing-specialist"
+    },
+    {
+      "title": "Content Writer",
+      "description": "Craft informative and engaging articles across various platforms.",
+      "location": "Remote",
+      "type": "Part-Time",
+      "category": "Marketing",
+      "applyLink": "https://example.com/apply/marketing-specialist"
+    }
+  ]
+  

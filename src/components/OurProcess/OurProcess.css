@@ -1,0 +1,94 @@
+.op-wrapper {
+  background: linear-gradient(to right, #f7f8fc, #eef1f5);
+  padding: 50px 20px;
+}
+
+.op-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 20px;
+}
+
+.op-left {
+  flex: 1 1 300px;
+  padding: 20px;
+  text-align: left;
+}
+
+.tag {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+.op-right {
+  flex: 1 1 300px;
+  padding: 20px;
+}
+
+.o-qa {
+  background: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.o-qa label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #34495e;
+  cursor: pointer;
+  display: block;
+  padding: 10px 0;
+}
+
+.o-qa p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin: 10px 0;
+}
+
+.o-qa input[type="checkbox"] {
+  display: none;
+}
+
+.o-qa input[type="checkbox"]:checked ~ .o-collapsible-text-1,
+.o-qa input[type="checkbox"]:checked ~ .o-collapsible-text-2,
+.o-qa input[type="checkbox"]:checked ~ .o-collapsible-text-3 {
+  max-height: 300px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.o-collapsible-text-1,
+.o-collapsible-text-2,
+.o-collapsible-text-3 {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* New CSS for larger images */
+.o-qa img {
+  width: 100px; /* Adjust this value to increase the size */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto 10px auto; /* Center the images */
+}

@@ -1,0 +1,77 @@
+.job-item {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 250px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.job-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.job-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.apply-button {
+    background-color: #093B54;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #005bb5;
+}
+
+@media screen and (max-width: 768px) {
+    .job-item {
+        margin: 20px 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .job-item {
+        margin: 20px 20px;
+    }
+
+    .job-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .job-item p {
+        font-size: 0.9rem;
+    }
+
+    .job-details {
+        font-size: 0.8rem;
+    }
+
+    .apply-button {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,101 @@
+.h-bottom-wrapper{
+    margin-bottom: 5rem;
+
+
+}
+
+.h-b-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: -10rem;
+    z-index: 999;
+}
+
+.h-b-left{
+    position: relative;
+    display: flex;
+    padding-top: 2rem;
+}
+
+.image-row{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.person-pill{
+    height: 25rem;
+    width: 20rem;
+    border-radius: 999px;
+    overflow: hidden;
+    box-shadow: 0 18px 36px rgba(0,0,0,0.25), 
+          0 16px 16px rgba(0,0,0,0.22);
+    
+}
+.person-pill-bg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 999px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+
+}
+.person-pill-bg >img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    scale: 1;
+    filter: grayscale(20%);    
+
+}
+.pill-span {
+    margin-top: 50px;
+    font-size: 1.3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 0.5em; /* Padding for better readability */
+    border-radius: 5px; /* Slightly rounded corners */
+    text-align: center; /* Center align the text */
+    position: absolute;
+    text-shadow: 3px 3px 6px black; /* Slight outline for better readability */
+    animation: shine 10s infinite; /* Shining effect */
+  }
+.hover-effect {
+    --c:linear-gradient(#ffffff 0 0); /* update the color here */
+    
+    padding-bottom: .5em;
+    background: var(--c), var(--c);
+    background-size: .4em .2em;
+    background-position:50% 100%;
+    background-repeat: no-repeat;
+    transition: .3s linear, background-size .3s .2s linear;
+  }
+  .hover-effect:hover {
+    background-size: 40% .3em;
+    background-position: 10% 100%, 90% 100%;
+  }
+
+  
+@media (max-width: 1024px) {
+    .person-pill{
+        height: 15rem;
+        width: 6.5rem;
+    }
+    .pill-span{
+        margin-top: 50px;
+        font-size: .5rem;
+    }
+    .image-row{
+        display: flex;
+        gap: .4rem;
+    }
+    .h-b-wrapper{
+        margin-top: -5rem;
+    }
+
+  }
+  

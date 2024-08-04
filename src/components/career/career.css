@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main h2 {
+    font-size: 32px;
+    color: #093B54;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.job-filters {
+    margin-bottom: 40px;
+}
+
+.job-filters button {
+    background-color: #fff;
+    color: #093B54;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.job-filters button:hover {
+    background-color: #093B54;
+    color: #fff;
+}
+
+.career-bg {
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url(./Contact-bg.jpg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-bg h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+
+.career-section {
+    margin-top: 2.6rem;
+}
+
+.career-content h2 {
+    font-size: 28px;
+    color: #093B54; /* Changed color to blue */
+    margin-bottom: 20px;
+}
+
+.career-content p {
+    font-size: 16px;
+    color: #093B54; /* Changed color to blue */
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .career-bg .ctext {
+        font-size: 1.5rem;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .career-bg .c-text {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}
+.career-section {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .career-section.visible {
+    opacity: 1;
+  }
+  
+  /* Add more styles as necessary */
+  

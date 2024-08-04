@@ -1,0 +1,133 @@
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  .Section{
+    width: 85%;
+    margin-top: 160px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+    
+}
+@media (max-width:900px){
+    .Section{
+        width: 90%;
+    }
+}
+  .headline{
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .ot-line div {
+    margin: 0 0.2rem;
+  }
+  .ot-line div:nth-child(1),
+  .ot-line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background-color:  var(--allbgcolor);
+    border-radius: 5px;
+  }
+  .ot-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+  }
+  .ot-line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #687eff;
+    border-radius: 50%;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #093b54;
+    border-radius: 10%;
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-client-data{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* gap: 3.2rem; */
+    align-items: center;
+    margin-top: 3rem;
+
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.swiper-client-msg{
+  padding: 4rem 7rem;
+  background: white;
+  border-radius: 1rem;
+  text-align: left;
+  box-shadow: 3px 3px black;
+  position: relative;
+}  
+.swiper-client-msg::before{
+  content: "";
+  position: absolute;
+  bottom: -5.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2.5rem solid white;
+  border-color: transparent;
+  border-top-color: #84C602;
+}
+.swiper-client-msg p::before{
+  content: "\f10d";
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  font-size: 3rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #84C602;
+}
+.swiper-client-msg p::after{
+  content: "\f10e";
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  font-size: 3rem;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #84C602;
+}
+.swiper-slide img{
+  max-width: 10rem;
+  height: 5rem;
+  border-radius: 100%;
+  border: 0.2rem solid #f9f9f9;
+}
+.client-data-details{
+  color: white;
+}
+.client-data-details-name{
+  margin-bottom: 0;
+}
+.client-data-details-desg{
+  margin-top: 0.25rem;
+}

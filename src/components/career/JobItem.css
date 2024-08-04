@@ -1,0 +1,44 @@
+.job-item {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.job-item h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.job-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+.job-details {
+    margin: 10px 0;
+    color: #999;
+    font-size: 14px;
+}
+
+.job-details span {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+button {
+    background-color: #093B54;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #093B54;
+}

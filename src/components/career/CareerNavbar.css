@@ -1,0 +1,60 @@
+.career-navbar {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .career-navbar .n-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .career-navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .career-navbar .n-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .career-navbar .n-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .career-navbar .logo-image {
+    height: 50px; /* Adjust size as needed */
+  }
+  
+  .career-navbar .n-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .career-navbar .home-button {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .career-navbar .home-button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  

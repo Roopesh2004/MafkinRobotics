@@ -1,0 +1,262 @@
+.we-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.we {
+  width: 90%;
+  padding: 2.6rem;
+  gap: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ot-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  line-height: 2.6rem;
+}
+
+.ot-container .tag {
+  width: 100%;
+  color: grey;
+  font-size: 1rem;
+}
+
+.ot-container .title {
+  color: var(--allbgcolor);
+  font-size: 1.6rem;
+}
+.ot-line div {
+  margin: 0 0.2rem;
+}
+.ot-line div:nth-child(1),
+.ot-line div:nth-child(3) {
+  height: 3px;
+  width: 70px;
+  background-color:  var(--allbgcolor);
+  border-radius: 5px;
+}
+.ot-line {
+  display: flex;
+  align-items: center;
+}
+.ot-line div:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  background: #687eff;
+  border-radius: 50%;
+}
+.tt-wrapper{
+  background: var(--allbgcolor);
+  width: 580px;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2.6rem;
+}
+.tt-wrapper h2{
+  text-align: center;
+  color: #fff;
+}
+.tt-wrapper hr{
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(to right, #4a90e2, #ffffff, #4a90e2);
+  margin: 10px auto;
+}
+.members{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.team-mem{
+  margin: 8px;
+}
+.team-mem img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.team-mem h4{
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  margin: 7px;
+}
+
+
+.mySwiper .ot-slider {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.mySwiper {
+  width: 99%;}
+/* 
+.ot-card {
+  width: 350px;
+  height: 515px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.ot-image-content,
+.ot-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.ot-image-content {
+  row-gap: 5px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--allbgcolor);
+  border-radius: 25px 25px 0 25px;
+  border: 0;
+  outline: 0;
+}
+
+.overlay::before,
+.overlay::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background: var(--allbgcolor);
+  border: 0;
+  outline: 0;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+}
+
+.ot-card-image .ot-card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070f4;
+}
+
+.ot-card-content .ot-Designation {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+.ot-card-content .ot-name {
+  padding-top: 10px;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: #333;
+}
+
+.ot-card-content .ot-Description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.ot-button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.ot-button:hover {
+  background-color: #265df2;
+}
+.ot-social-container {
+	margin: 20px 0;
+}
+
+.ot-social-container a {
+	border: 1px solid #DDDDDD;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	height: 40px;
+	width: 40px;
+} */
+
+@media (max-width: 1080px) {
+
+  .we {
+    width: 100%;
+  }
+  .ot-container .tag {
+    width: 99%;
+  }
+  .ot-container .title {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ot-container .tag {
+    width: 95%;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  
+  .ot-container .title {
+    color: var(--allbgcolor);
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+  .team-mem{
+    margin: 3px;
+  }
+  .team-mem img{
+    width: 70px;
+    height: 70px;
+    margin: 4px;
+  }
+  .team-mem h4{
+    text-align: center;
+    font-size: 8px;
+    margin: 3px;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .ot-container {
+    line-height: 2rem;
+  }
+}

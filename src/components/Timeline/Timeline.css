@@ -1,0 +1,251 @@
+/* Timeline section */
+.timeline-section {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.m-heading h2 {
+  color: #ffffff;
+  font-size: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-items {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.timeline-items::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+  left: calc(50% - 1px);
+  animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+}
+
+.timeline-date {
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+  margin: 6px 0 15px;
+}
+
+.timeline-content {
+  background-color: var(--allbgcolor, #2c2c2c);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY((-30px));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.timeline-content p {
+  color: #c8c8c8;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.timeline-bg {
+  height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(./contact-bg.jpg);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-bg h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding: 0.4rem 0;
+  letter-spacing: 4px;
+}
+
+.t-line div {
+  margin: 0 0.2rem;
+}
+
+.t-line div:nth-child(1),
+.t-line div:nth-child(3) {
+  height: 3px;
+  width: 70px;
+  background-color: var(--allbgcolor, #2c2c2c);
+  border-radius: 5px;
+}
+
+.t-line {
+  display: flex;
+  align-items: center;
+}
+
+.t-line div:nth-child(2) {
+  width: 10px;
+  height: 10px;
+  background: var(--allbgcolor, #2c2c2c);
+  border-radius: 50%;
+}
+
+/* Learn More button */
+.learn-more-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #6cc04a; /* Match the button color in the image */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.learn-more-btn:hover {
+  background-color: #58a83d; /* Slightly darker green for hover effect */
+}
+
+/* Modal styling */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: #08374c; /* Dark blue background */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* White text for visibility */
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ff5722; /* Orange color for the title */
+}
+
+.modal p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Modal buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-action-btn,
+.modal-close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff5722; /* Orange color for buttons */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 120px;
+}
+
+.modal-action-btn:hover,
+.modal-close-btn:hover {
+  background-color: #e64a19; /* Slightly darker orange for hover effect */
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .timeline-items::before {
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-action-btn,
+  .modal-close-btn {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}

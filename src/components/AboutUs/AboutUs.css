@@ -1,0 +1,55 @@
+
+.About-bg {
+    height: 100vh;
+    background-image: url(./AboutUs.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .About-bg h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+  }
+  .a-line div {
+    margin: 0 0.2rem;
+  }
+  .a-line div:nth-child(1),
+  .a-line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background-color:  var(--allbgcolor);
+    border-radius: 5px;
+  }
+  .a-line {
+    display: flex;
+    align-items: center;
+  }
+  .a-line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #687eff;
+    border-radius: 50%;
+  }
+
+  .a-text {
+    font-weight: 300;
+    opacity: 0.9;
+    width: 75%;
+    align-items: center;
+    text-align: center;
+  }
+  .About-bg .a-text {
+    margin: 1.6rem 0;
+  }
+  
+  

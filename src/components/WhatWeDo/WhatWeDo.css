@@ -1,0 +1,331 @@
+.wwd-wrapper {
+  position: relative;
+}
+
+.wwd-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.wwd-head {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+}
+.wwd-head .tag{
+  color: #84C602;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow */
+  -webkit-text-stroke: 1px #000; /* Add outline */
+}
+.wwd-head .title{
+  color: #84C602;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow */
+  -webkit-text-stroke: 1px #000; /* Add outline */
+}
+.wwd-head .des {
+  color: #84C602;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow */
+  -webkit-text-stroke: 0.5px #000; /* Add outline */
+}
+
+.wwd-blocks {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+.wwd-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border-radius: 2rem;
+}
+
+.block-features {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.block-feature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  border: 1px solid hsla(0, 0%, 59%, 0.17);
+  border-radius: 1rem;
+  padding: 1rem;
+  color: var(--title-color);
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+  height: fit-content;
+}
+
+.wwd-block:nth-child(1) > .block-features > :nth-child(2) {
+  margin-top: 3rem;
+}
+.wwd-block:nth-child(2) > .block-features > :nth-child(1),
+.wwd-block:nth-child(2) > .block-features > :nth-child(3) {
+  margin-top: 2rem;
+}
+
+
+
+
+.cards .button2{
+  background-color: #84C602;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 50%;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.cards .button2:hover {
+  background-color: #8ed600;
+  box-shadow: #B6FFFA
+}
+.modelBox{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 400px;
+  background-color: var(--allbgcolor);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 40px 40px 40px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.box .tag{
+  margin-bottom: 35px;
+}
+.box .text{
+  opacity: 0.8;
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.box .b-button{
+  display: flex;
+  gap: 1rem;
+}
+
+
+.b-button .button{
+  display: flex;
+  right: 0.5rem;
+  height: 3rem;
+  width: 9rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 0rem 2rem;
+  border-radius: 999px;
+  color: white;
+  border: 0;
+  outline: 0;
+}
+.b-button .button:hover {
+  box-shadow: var(--secondary-color)
+}
+.close-button{
+  display: flex;
+  right: 0.5rem;
+  height: 3rem;
+  width: 9rem;
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 0rem 2rem;
+  border-radius: 999px;
+  color: white;
+  border: 0;
+  outline: 0;
+}
+
+.close-button:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
+@media (max-width: 990px) {
+  .wwd-blocks {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .wwd-head .tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .wwd-head .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: .8rem;
+    line-height: 1.2rem;
+  }
+  /* .wwd-head .des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+  } */
+  .wwd-head .des{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: .8rem;
+    line-height: 1.2rem;
+  }
+  .wwd-block {
+    width: 80%;
+    margin: auto;
+  }
+  .block-features {
+    flex-direction: column;
+  }
+  .block-feature {
+    margin-top: 0rem !important;
+  }
+  .box .tag{
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+  }
+  .box .text{
+    font-size: 12px;
+    margin-bottom: 30px;
+    line-height: 20px;
+  }
+  
+  .box .b-button{
+    gap: 0.22rem;
+  }
+
+}
+.card-section {
+  margin-bottom: 100px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.card {
+    width: 15rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  padding: 30px;
+  background-color: #093B54;
+  box-shadow: 2px 4px 20px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding-left: 1rem;
+  display: inline-block;
+}
+.card h1 {
+  font-size: 17px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: white; /* Change text color to white */
+}
+.card p {
+  margin-bottom: 18px;
+  color: white; /* Change text color to white */
+}
+.card a {
+  color: rgb(255, 47, 0);
+}
+
+.card .img {
+  width: 14rem;
+  height: 12rem;
+}
+
+@media (max-width: 1020px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+  }
+}
+.hea{
+  padding: 0%;
+  margin: 0%;
+  font-size: larger;
+}
